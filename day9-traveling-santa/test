@@ -1,0 +1,18 @@
+/************ Example syntax **********/
+var thisTest = {};
+thisTest.name = "Squire";
+thisTest.whoAreYou = function(){
+	return this.name;
+}
+
+/************ Hijacking object to bind with **********/
+var hijack = {
+	name: "Dylan"
+};
+/************ Do not modify anything above this line **********/
+
+ hijack.namey = function() {
+   return this.name;
+ }
+
+ var myName = hijack.namey;
