@@ -1,5 +1,5 @@
 var input = require('./input.JSON');
-var _ = require('underscore');
+
 
 console.log(evalNode(input));
 
